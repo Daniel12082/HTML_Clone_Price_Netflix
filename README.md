@@ -1,3 +1,20 @@
+ ```
+# Netflix Clone
+
+This is a clone of the Netflix website built using HTML, CSS, and JavaScript. The project is fully responsive and works on all devices.
+
+## Code Structure
+
+The project is structured as follows:
+
+* `index.html`: The main HTML file.
+* `styles.css`: The main CSS file.
+* `scripts.js`: The main JavaScript file.
+* `assets/`: The assets folder contains images and other static files.
+
+## HTML
+
+The HTML file is responsible for the overall structure of the website. It includes the header, footer, and main content area.
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 
@@ -116,7 +133,7 @@
     <main>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
-          <div class="card mb-4 rounded-0  shadow-sm">
+          <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Basic</h4>
             </div>
@@ -127,12 +144,12 @@
                 <li>Email support</li>
                 <li>Help center access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-outline-danger rounded-0">Select</button>
+              <button type="button" class="w-100 btn btn-lg btn-outline-danger">Get started</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-0 shadow-sm">
+          <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Standard</h4>
             </div>
@@ -143,13 +160,13 @@
                 <li>Priority email support</li>
                 <li>Help center access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-danger rounded-0">Select</button>
+              <button type="button" class="w-100 btn btn-lg btn-danger">Get started</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-0 shadow-sm border-danger">
-            <div class=" py-3 text-bg-danger border-danger">
+          <div class="card mb-4 rounded-3 shadow-sm border-danger">
+            <div class="card-header py-3 text-bg-danger border-danger">
               <h4 class="my-0 fw-normal">Premium</h4>
             </div>
             <div class="card-body">
@@ -159,7 +176,7 @@
                 <li>PEmail support</li>
                 <li>Help center access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-danger rounded-0">Select</button>
+              <button type="button" class="w-100 btn btn-lg btn-danger">Get started</button>
             </div>
           </div>
         </div>
@@ -247,3 +264,4 @@
   </div>
 </body>
 </html>
+```
