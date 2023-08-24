@@ -16,5 +16,42 @@
             }
         ]
         
-    }
+    },
+    "cartas":{
+        "cardcontent":[
+            {
+                "header": "Basic",
+                "Body":{
+                    "precio": "<h1 class='card-title pricing-card-title'><small class='text-body-secondary fw-light'>COP</small>16,900</h1>",
+                    "servicios":{
+                        "device":"1 devices",
+                        "support":"Priority email support",
+                        "Help":"Help center support"
+                    }
+                }
+            },
+            {
+                "header": "Standard",
+                "Body":{
+                    "precio": "<h1 class='card-title pricing-card-title'><small class='text-body-secondary fw-light'>COP</small>26,900</h1>",
+                    "servicios":{
+                        "device":"2 different devices",
+                        "support":"Priority email support",
+                        "Help":"Help center access"
+                    }
+                }
+            },
+            {
+                "header": "Premium",
+                "Body":{
+                    "precio": "<h1 class='card-title pricing-card-title'><small class='text-body-secondary fw-light'>COP</small>38,900</h1>",
+                    "servicios":{
+                        "device":"4 different devices",
+                        "support":"Priority email support",
+                        "Help":"Help center access"
+                    }
+                }
+            }
+        ]
+        }
 }
