@@ -54,9 +54,9 @@ let construirTabla =async()=>{
                 ${res.Tabla.tbody.map((value)=>/*html*/`
                 <tr>
                     <td scope="row" class="text-start">${value.columna1}</td>
-                    <td scope="row" class="text-start text-muted ">${value.columna2}</td>
-                    <td scope="row" class="text-start text-muted" >${value.columna3}</td>
-                    <td scope="row" class="text-start  text-danger">${value.columna4}</td>
+                    <td scope="row" class="text-center  align-middle text-muted ">${value.columna2}</td>
+                    <td scope="row" class="text-center  align-middle text-muted" >${value.columna3}</td>
+                    <td scope="row" class="text-center align-middle  text-danger">${value.columna4}</td>
                 </tr>
                 ` ).join(" ")}
             </tbody>
