@@ -34,6 +34,36 @@ let construirCartas = async () => {
         `).join(" ")}
     `);
 }
+let construirTabla =async()=>{
+    let peticion = await fetch(`${path}.json `);
+    let res = await peticion.json();
+    let Selecion = document.querySelector("#mytable");
+    Selecion.insertAdjacentHTML("beforeend",/*html*/ `
+    <h2 class='display-6 text-center mb-4'>${res.Tabla.titulo}</h2>
+    <div class="table-responsive">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    ${res.Tabla.thead.columna1}
+                    ${res.Tabla.thead.columna2}
+                    ${res.Tabla.thead.columna3}
+                    ${res.Tabla.thead.columna4}
+                </tr>
+            </thead>
+            <tbody>
+                ${res.Tabla.tbody.map((value)=>/*html*/`
+                <tr>
+                    <td scope="row" class="text-start">${value.columna1}</td>
+                    <td scope="row" class="text-start text-muted ">${value.columna2}</td>
+                    <td scope="row" class="text-start text-muted" >${value.columna3}</td>
+                    <td scope="row" class="text-start  text-danger">${value.columna4}</td>
+                </tr>
+                ` ).join(" ")}
+            </tbody>
+            </table>
+        </div>
+    `)}
 
 construirEncabezado();
 construirCartas();
+construirTabla();

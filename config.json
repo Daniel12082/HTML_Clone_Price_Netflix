@@ -68,5 +68,34 @@
                 }
             }
         ]
+        },
+    "Tabla":{
+        "titulo":"Compare plans",
+        "thead": {
+            "columna1":"<th style='width: 34%;'></th>",
+            "columna2":"<th style='width: 34%;'>Basic</th>",
+            "columna3":"<th style='width: 34%;'>Standard</th>",
+            "columna4":"<th style='width: 34%;class='text-danger'>Premium</th>"
+            },
+        "tbody":[
+            {
+                "columna1":"Video quality",
+                "columna2":"Good",
+                "columna3":"Better",
+                "columna4":"Optimal"
+            },
+            {
+                "columna1":"Resolution",
+                "columna2":"720p",
+                "columna3":"1080p",
+                "columna4":"4K+HDR"
+            },
+            {
+                "columna1":"Watch on your TV, computer, mobile phone and tablet",
+                "columna2":"<svg class='bi bi-lightning ' width='24' height='24' class=''><use xlink:href='#check' /></svg>",
+                "columna3":"<svg class='bi bi-lightning ' width='24' height='24' class=''><use xlink:href='#check' /></svg>",
+                "columna4":"<svg class='bi bi-lightning ' width='24' height='24' class=''><use xlink:href='#check' /></svg>"
+            }
+        ]
         }
 }
