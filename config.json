@@ -22,6 +22,11 @@
             {
                 "header": "Basic",
                 "Body":{
+                    "Border":{
+                        "border_red":"<div class='card mb-4 rounded-0 shadow-sm'>",
+                        "background":"<div class='card-header py-3'>",
+                        "button":"'w-100 btn btn-lg btn-outline-danger rounded-0'"
+                    },
                     "precio": "<h1 class='card-title pricing-card-title'><small class='text-body-secondary fw-light'>COP</small>16,900</h1>",
                     "servicios":{
                         "device":"1 devices",
@@ -33,6 +38,11 @@
             {
                 "header": "Standard",
                 "Body":{
+                    "Border":{
+                        "border_red":"<div class='card mb-4 rounded-0 shadow-sm'>",
+                        "background":"<div class='card-header py-3'>",
+                        "button":"'w-100 btn btn-lg btn-danger rounded-0'"
+                    },
                     "precio": "<h1 class='card-title pricing-card-title'><small class='text-body-secondary fw-light'>COP</small>26,900</h1>",
                     "servicios":{
                         "device":"2 different devices",
@@ -44,6 +54,11 @@
             {
                 "header": "Premium",
                 "Body":{
+                    "Border":{
+                        "border_red":"<div class='card mb-4 rounded-0 shadow-sm border-danger'>",
+                        "background":"<div class=' py-3 text-bg-danger border-danger'>",
+                        "button":"'w-100 btn btn-lg btn-danger rounded-0'"
+                    },
                     "precio": "<h1 class='card-title pricing-card-title'><small class='text-body-secondary fw-light'>COP</small>38,900</h1>",
                     "servicios":{
                         "device":"4 different devices",
