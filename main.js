@@ -63,7 +63,31 @@ let construirTabla =async()=>{
             </table>
         </div>
     `)}
-
+    let construirFooter =async()=>{
+        let peticion = await fetch(`${path}.json `);
+        let res = await peticion.json();
+        let Selecion = document.querySelector("#Footer");
+        Selecion.insertAdjacentHTML("beforeend",/*html*/ `
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="${res.Footer.copyright.icon}" alt="" width="40" height="50">
+                <small class="d-block mb-3 text-body-secondary">&copy;${res.Footer.copyright.text}</small>
+            </div>
+            ${res.Footer.terms.map((value)=>/*html*/`
+            <div class="col-6 col-md">
+                <h5>${value.title}</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.lista.i1}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.lista.i2}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.lista.i3}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.lista.i4}</a></li>
+                <ul>
+            </div>
+            `).join(" ")}
+        </div>
+        `)
+    }
 construirEncabezado();
 construirCartas();
 construirTabla();
+construirFooter();

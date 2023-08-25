@@ -96,6 +96,41 @@
                 "columna3":"<svg class='bi bi-lightning ' width='24' height='24' class=''><use xlink:href='#check' /></svg>",
                 "columna4":"<svg class='bi bi-lightning ' width='24' height='24' class=''><use xlink:href='#check' /></svg>"
             }
+            ]
+            },
+    "Footer":{
+        "copyright":{
+            "icon":"/assets/brand/netflix-1-logo-svgrepo-com.svg",
+            "text":" Campuslands 2023 Bucaramanga"
+        },
+        "terms":[
+            {
+                "title":"Features",
+                "lista":{
+                    "i1":"Cool stuff",
+                    "i2":"Featured Films",
+                    "i3":"Exciting Series",
+                    "i4":"Cinematic Resources"
+                }
+            },
+            {
+                "title":"Resources",
+                "lista":{
+                    "i1":"Resource",
+                    "i2":"Movie",
+                    "i3":"Series",
+                    "i4":"Tv Shows"
+                }
+            },
+            {
+                "title":"About Us",
+                "lista":{
+                    "i1":"Team",
+                    "i2":"Locations",
+                    "i3":"Privacy",
+                    "i4":"Terms"
+                }
+            }
         ]
-        }
+    }
 }
